@@ -10,6 +10,7 @@ dependencies:
   - pymatsolver==0.2.*
   - matplotlib==3.7.*
   - pooch==1.8.*
+  - pandas==2.2.*
   - ipython
   - jupyter
   - jupyterlab

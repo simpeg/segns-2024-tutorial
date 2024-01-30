@@ -95,7 +95,10 @@ follow their installation instructions:
 - Install miniforge: https://github.com/conda-forge/miniforge#install
 - Install Anaconda: https://docs.anaconda.com/anaconda/install
 
-### Step 2: Create the `simpeg-segns2024` conda environment
+### Step 2: Get the repository's source code and data.
+%TODO fill this
+
+### Step 3: Create the `simpeg-segns2024` conda environment
 
 > [!IMPORTANT]
 > In the following steps we'll make use of the `mamba` package manager. In case
@@ -116,7 +119,7 @@ follow their installation instructions:
    the tutorial). If you installed Anaconda, then replace `mamba` for `conda`
    in the previous line.
 
-### Step 3: Activate the `simpeg-segns2024` environment and start JupyterLab
+### Step 4: Activate the `simpeg-segns2024` environment and start JupyterLab
 
 > [!TIP]
 > You'll need a browser that is able to run JupyterLab (basically anyone except
@@ -164,7 +167,7 @@ that aren't preinstalled in the default Google Colab environment.
    that appear on its top-right).
 1. Type the following line in the selected cell:
    ```
-   !pip install simpeg==0.20.0 discretize==0.10.0 pymatsolver==0.2.0
+   !pip install simpeg==0.20.0 discretize==0.10.0 pandas=2.2.0
    ```
    Note the `!` sign at the beginning of the line, **don't remove it**.
 1. Run that cell by clicking the _Play_ button on its left or by pressing
@@ -172,6 +175,9 @@ that aren't preinstalled in the default Google Colab environment.
    in that line. If installation goes smoothly, you should see a line that
    reads `Successfully installed ...` and lists all the new packages that had
    been installed.
+
+### Step 4: Get the repository's source code and data.
+%TODO fill this
 
 > [!IMPORTANT]
 > Every time you open a notebook in Colab or create a new one, you'll have to
@@ -187,8 +193,8 @@ that aren't preinstalled in the default Google Colab environment.
 
 ## License
 
-This work is licensed under a [Creative Commons Attribution 4.0 International
-License](http://creativecommons.org/licenses/by/4.0).
+This work is licensed under the [MIT
+License](https://opensource.org/license/mit/).
 
 [jcapriot]: https://www.github.com/jcapriot
 [lindsey]: https://lindseyjh.ca/
