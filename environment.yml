@@ -1,0 +1,15 @@
+name: simpeg-segns2024
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.*
+  - pip
+  - numpy==1.23.*
+  - simpeg==0.20.*
+  - discretize==0.10.*
+  - pymatsolver==0.2.*
+  - matplotlib==3.7.*
+  - pooch==1.8.*
+  - ipython
+  - jupyter
+  - jupyterlab
