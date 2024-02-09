@@ -111,8 +111,11 @@ follow their installation instructions:
 1. Navigate to the folder that has the downloaded environment file
    (if you don't know how to do this, take a moment to read [the Software
    Carpentry lesson on the Unix shell][shell-novice]).
-1. Create the conda environment by running `mamba env create --file
-   environment.yml` (this will download and install all of the packages used in
+1. Create the conda environment by running
+   ```
+   mamba env create --file environment.yml
+   ```
+   (this will download and install all of the packages used in
    the tutorial). If you installed Anaconda, then replace `mamba` for `conda`
    in the previous line.
 
@@ -144,8 +147,10 @@ Now we can activate the newly created `simpeg-segns2024` environment.
 
 1. Open a terminal (_Anaconda Prompt_ or _Miniforge Prompt_ if you are running
    Windows).
-1. Activate the `simpeg-segns2024` environment by running `conda activate
-   simpeg-segns2024`.
+1. Activate the `simpeg-segns2024` environment by running:
+   ```
+   conda activate simpeg-segns2024
+   ```
 1. With the `simpeg-segns2024` environment activated, we can start JupyterLab
    by running `jupyter-lab` in the terminal. A new tab in our web browser should
    open showing JupyterLab's interface.
