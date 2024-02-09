@@ -21,7 +21,7 @@ and
 > Sciences. University of British Columbia.
 > <br>
 > <sup>3</sup>
-> Environmental Geophysics Group, Department of Geophysics, Stanford University
+> Environmental Geophysics Research Group, Department of Geophysics, Stanford University
 
 
 | **Information** | |
