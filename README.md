@@ -167,7 +167,7 @@ that aren't preinstalled in the default Google Colab environment.
    that appear on its top-right).
 1. Type the following line in the selected cell:
    ```
-   !pip install simpeg==0.20.0 discretize==0.10.0 pandas=2.2.0
+   !pip install simpeg==0.20.0 discretize==0.10.0 pandas==2.2.0
    ```
    Note the `!` sign at the beginning of the line, **don't remove it**.
 1. Run that cell by clicking the _Play_ button on its left or by pressing
