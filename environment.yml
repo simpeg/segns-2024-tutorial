@@ -7,7 +7,6 @@ dependencies:
   - numpy==1.23.*
   - simpeg==0.20.*
   - discretize==0.10.*
-  - pymatsolver==0.2.*
   - matplotlib==3.7.*
   - pooch==1.8.*
   - pandas==2.2.*
