@@ -95,10 +95,7 @@ follow their installation instructions:
 - Install miniforge: https://github.com/conda-forge/miniforge#install
 - Install Anaconda: https://docs.anaconda.com/anaconda/install
 
-### Step 2: Get the repository's source code and data.
-%TODO fill this
-
-### Step 3: Create the `simpeg-segns2024` conda environment
+### Step 2: Create the `simpeg-segns2024` conda environment
 
 > [!IMPORTANT]
 > In the following steps we'll make use of the `mamba` package manager. In case
@@ -119,11 +116,28 @@ follow their installation instructions:
    the tutorial). If you installed Anaconda, then replace `mamba` for `conda`
    in the previous line.
 
+### Step 3: Get the repository's utility code and data.
+
+If you are not comfortable using git, you will need to at a bare minimum you will
+need to download:
+
+- The data configuration file: [configuration](data/20170606_337m2_Cal_DualWaveform_60Hz_414_412_418.gex)
+- A parser script to read the configuration file: [gex_parser.py](notebooks/utilities/gex_parser.py)
+- The environment [`environment.yml`][environment_yml] as detailed above in Step 2.
+
+If you are comfortable using git, you have likely already cloned this repository and
+received all of the files you will need.
+
+>[!TIP]
+> You don't need to explicitly download the data file from github, we will be able to use
+> `pandas.read_csv` to retrieve the file for us.
+
+
 ### Step 4: Activate the `simpeg-segns2024` environment and start JupyterLab
 
 > [!TIP]
 > You'll need a browser that is able to run JupyterLab (basically anyone except
-> Internet Explorer or Edge). If you are in Windows, make sure you change your
+> Internet Explorer). If you are in Windows, make sure you change your
 > default browser to a different one.
 
 Now we can activate the newly created `simpeg-segns2024` environment.
@@ -176,18 +190,29 @@ that aren't preinstalled in the default Google Colab environment.
    reads `Successfully installed ...` and lists all the new packages that had
    been installed.
 
-### Step 4: Get the repository's source code and data.
-%TODO fill this
+### Step 4: Copy the repository's utility code and data to Colab.
+
+To be able to follow along with the tutorial, you will need to copy at least
+two files directly to Google Colab: the configuration file and the parser script.
+You can download them directly from github to Google Colab by typing in another cell:
+
+```
+!wget https://raw.githubusercontent.com/simpeg/segns-2024-tutorial/main/data/20170606_337m2_Cal_DualWaveform_60Hz_414_412_418.gex
+!wget https://raw.githubusercontent.com/simpeg/segns-2024-tutorial/main/notebooks/utilities/gex_parser.py
+```
+
+This will download the SkyTEM configuration file and a parser to easily read it into python.
+
 
 > [!IMPORTANT]
 > Every time you open a notebook in Colab or create a new one, you'll have to
-> reinstall these packages (Google Colab don't save installed states across
-> notebooks).
+> reinstall these packages and download the data again (Google Colab doesn't save
+> installed states across notebooks).
 >
 > If it's a new notebook, just follow the previous instructions from the top.
 >
 > If it's an existing notebook, make sure that it has the `!pip install ...`
-> line at the top (add it otherwise), and run it.
+> and the `!wget ...` lines at the top (add it otherwise), and run it.
 
 ## Acknowledgement
 AEM data used in this tutorial were acquired with funding from MCWRA (Monterey County Water Resources Agency) with the [SkyTEM](https://skytem.com/) system; acquisition oversight, planning, and processing by [Aqua Geo Framework](https://www.aquageoframeworks.com/).
