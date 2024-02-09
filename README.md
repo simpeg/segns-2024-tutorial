@@ -35,11 +35,11 @@ We were invited by the SEG Near-Surface Geophysics Student Subcommittee to give 
 as part of their Open-Source Software webinar series.
 
 > Discover the powerful open-source [SimPEG][simpeg] framework.
-> You will learn how to simulate and invert SkyTEM data using a real-world dataset.
+> You will learn how to simulate and invert airborne electromagnetic (AEM) data using a real-world dataset.
 
-During this tutorial we will go through a notebook describing how to invert SkyTEM
-data collected in the Salinas Valley of California to monitor salt water intrusion. For details
-about the dataset please checkout [Gottschalk et. al. 2017][case-study].We will focus on
+During this tutorial we will go through a notebook describing how to invert AEM
+data collected in the Salinas Valley of California using the SkyTEM system to monitor salt water intrusion. For details
+about the dataset please checkout [Gottschalk et. al. 2017][case-study]. We will focus on
 how to simulate and invert the data by representing the parameters of the SkyTEM system
 using SimPEG components.
 
@@ -189,7 +189,8 @@ that aren't preinstalled in the default Google Colab environment.
 > If it's an existing notebook, make sure that it has the `!pip install ...`
 > line at the top (add it otherwise), and run it.
 
-
+## Acknowledgement
+AEM data used in this tutorial were acquired with funding from MCWRA (Monterey County Water Resources Agency) with the [SkyTEM](https://skytem.com/) system; acquisition oversight, planning, and processing by [Aqua Geo Framework](https://www.aquageoframeworks.com/).
 
 ## License
 
