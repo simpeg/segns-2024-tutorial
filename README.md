@@ -152,7 +152,11 @@ Now we can activate the newly created `simpeg-segns2024` environment.
    conda activate simpeg-segns2024
    ```
 1. With the `simpeg-segns2024` environment activated, we can start JupyterLab
-   by running `jupyter-lab` in the terminal. A new tab in our web browser should
+   by running 
+   ```terminal
+   jupyter-lab
+   ```
+   in the terminal. A new tab in our web browser should
    open showing JupyterLab's interface.
 
 ## Configure Google Colab
