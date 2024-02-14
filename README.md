@@ -44,6 +44,11 @@ This notebook is what we will use and modify during the live tutorial:
 - [live-skytem-inversion.ipynb](notebooks/live-skytem-inversion.ipynb)
 
 
+Alternatively there is also a filled version of this notebook available if you do not want to follow
+along with the coding.
+
+- [skytem-inversion.ipynb](notebooks/skytem-inversion.ipynb)
+
 ## Setup
 
 During this workshop we'll use [Juptyer notebooks][jupyter] to simulate and invert
