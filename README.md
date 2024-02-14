@@ -3,11 +3,7 @@
 
 **Instructors:**
 [Joseph Capriotti][jcapriot]<sup>1</sup>
-and [Lindsey Heagy][lindsey]<sup>2</sup>
-
-**Authors of the material:**
-[Joseph Capriotti][jcapriot]<sup>1</sup>,
-[Lindsey Heagy][lindsey]<sup>2</sup>,
+[Lindsey Heagy][lindsey]<sup>2</sup>
 and
 [Seogi Kang][seogi]<sup>3</sup>
 
@@ -26,7 +22,7 @@ and
 
 | **Information** | |
 |---|---|
-| When | Feb 14, 2024 |
+| When | Feb 14, 2024  11 am CST|
 
 
 ## About
@@ -43,7 +39,9 @@ about the dataset please checkout [Gottschalk et. al. 2017][case-study]. We will
 how to simulate and invert the data by representing the parameters of the SkyTEM system
 using SimPEG components.
 
-- [skytem-inversion.ipynb](notebooks/skytem-inversion.ipynb)
+This notebook is what we will use and modify during the live tutorial:
+
+- [live-skytem-inversion.ipynb](notebooks/live-skytem-inversion.ipynb)
 
 
 ## Setup
@@ -158,6 +156,7 @@ Now we can activate the newly created `simpeg-segns2024` environment.
    ```
    in the terminal. A new tab in our web browser should
    open showing JupyterLab's interface.
+1. Navigate to the [live-skytem-inversion.ipynb](notebooks/live-skytem-inversion.ipynb) notebook.
 
 ## Configure Google Colab
 
@@ -165,7 +164,7 @@ To be able to run the Jupyter notebooks for this tutorial in Google Colab,
 we'll need to follow these steps:
 
 1. Login to our Google Colab account.
-1. Create a new notebook.
+1. Copy the live notebook from GitHub.
 1. Install some Python libraries that we'll need to use, such as
    [SimPEG][simpeg].
 
@@ -174,18 +173,20 @@ we'll need to follow these steps:
 If you don't have a Google account, create one and log in. If you do, you just
 need to log in.
 
-### Step 2: Create a new notebook
+### Step 2: Open the Live notebook in Colab
 
 1. Access to Google Colab by going to: https://colab.research.google.com
-1. Find the top menu and choose `File` > `New notebook`. A new tab should open
-   with a blank notebook in it.
+1. Find the top menu and choose `File` > `Open Notebook`.
+1. Select the GitHub option
+1. Paste the URL of this repository into the space: https://github.com/simpeg/segns-2024-tutorial
+2. Select the [live-skytem-inversion.ipynb](notebooks/live-skytem-inversion.ipynb) notebook.
 
 ### Step 3: Install some Python libraries
 
 To be able to follow this workshop we need to install some Python libraries
 that aren't preinstalled in the default Google Colab environment.
 
-1. Click on the first cell of the notebook (if it's not empty, then create
+1. Click on the first cell of the notebook (Create
    a new _Code_ cell and move it to the first position with the arrows icons
    that appear on its top-right).
 1. Type the following line in the selected cell:
@@ -203,7 +204,7 @@ that aren't preinstalled in the default Google Colab environment.
 
 To be able to follow along with the tutorial, you will need to copy at least
 two files directly to Google Colab: the configuration file and the parser script.
-You can download them directly from github to Google Colab by typing in another cell:
+You can download them directly from github to Google Colab by typing in another cell (and then executing it):
 
 ```
 !wget https://raw.githubusercontent.com/simpeg/segns-2024-tutorial/main/data/20170606_337m2_Cal_DualWaveform_60Hz_414_412_418.gex
