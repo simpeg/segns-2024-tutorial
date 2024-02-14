@@ -23,6 +23,7 @@ and
 | **Information** | |
 |---|---|
 | When | Feb 14, 2024  11 am CST|
+| Materials | [Intro Slides](https://docs.google.com/presentation/d/1a2mtYsiRe_ylpGesgdkZJxeG_9tDjO8TPXVV6gzD0Ss/edit?usp=sharing) |
 
 
 ## About
